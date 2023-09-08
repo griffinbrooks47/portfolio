@@ -27,7 +27,7 @@ const project2 : IProject = {
     url: 'http://griffinbrooks.com',
     desc: 'The website you\'re looking at! I finally got around to rebuilding this website with ReactJS and TypeScript, following a brief period of static HTML and CSS. In fact, this project was my way of learning TypeScript!',
     skills: ['TypeScript','ReactJS', 'HTML', 'CSS'],
-    repo: 'https://github.com/griffinbrooks47/griffinbrooks.com'
+    repo: 'https://github.com/griffinbrooks47/portfolio'
 }
 
 export const projectData = [project1, project2]
