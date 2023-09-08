@@ -1,0 +1,41 @@
+.nav{
+    display: flex;
+    height: 2.5rem;
+    margin-top: 2rem;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 0.5rem;
+    width: 5rem;
+}
+.nav-tag{
+    font-size: 1.2rem;
+    font-family: 'Mukta', sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (min-width : 320px) {
+    .nav{
+        justify-content: center;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 760px) {
+    .nav{
+        justify-content: left;
+        margin-left: 2rem;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    
+}
