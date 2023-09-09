@@ -6,7 +6,7 @@ div{
     margin-top: 7rem;
 }
 .projects-header{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-right: 1rem;
     font-family: 'Mukta', sans-serif;
 }
@@ -103,22 +103,27 @@ div{
         margin-top: 5rem;
     }
     .project-card{
-        width: 80%;
-        margin-inline: 10%;
+        width: 90%;
+        margin-inline: 5%;
     }
     .projects-header{
-        text-align: center;
+        text-align: right;
+        margin-right: 2rem;
         margin-bottom: 0.5rem;
     }
     .project-skills{
         width: 60%;
         margin-inline: 20%;
     }
+    .project-desc{
+        font-size: 0.9rem;
+        padding-inline: 1.5rem;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-
+@media only screen and (min-width : 400px) {
+    
 }
 
 /* Small Devices, Tablets */
@@ -142,6 +147,10 @@ div{
     .project-skills{
         width: 60%;
         margin-inline: 20%;
+    }
+    .project-desc{
+        font-size: 1.1rem;
+        padding-inline: 3rem;
     }
 }
 
