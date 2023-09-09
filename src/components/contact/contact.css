@@ -1,0 +1,33 @@
+.contact-container{
+    margin-block: 2rem;
+}
+.contact-divider{
+    
+}
+.contact-header{
+    text-align: center;
+}
+.contact-list{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: fit-content;
+
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 0.5rem;
+}
+.contact-item-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+}
+.contact-item-icon{
+    height: 2rem;
+}

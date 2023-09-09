@@ -1,6 +1,6 @@
 import './profile.css'
 import { socials } from './socials'
-import { icons } from '../../assets/icons'
+import { aboutIcons } from '../../assets/icons'
 
 export const Profile = () => {
     return (
@@ -23,7 +23,7 @@ export const Profile = () => {
                     </div>
                 </div>
                 <div className='profile-picture'>
-                    <img className='profile-picture-png' src={icons.griffin}/>
+                    <img className='profile-picture-png' src={aboutIcons.griffin}/>
                 </div>
             </div>
             

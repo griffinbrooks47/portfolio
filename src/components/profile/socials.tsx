@@ -1,4 +1,4 @@
-import { icons } from "../../assets/icons";
+import { aboutIcons } from "../../assets/icons";
 
 
 interface ISocial {
@@ -7,22 +7,22 @@ interface ISocial {
 }
 
 const LinkedIn: ISocial = {
-    icon: icons.linkedin,
+    icon: aboutIcons.linkedin,
     url: "https://www.linkedin.com/in/griffin-brooks-992606246/"
 }
 
 const GitHub : ISocial = {
-    icon: icons.github,
+    icon: aboutIcons.github,
     url: "https://github.com/griffinbrooks47"
 }
 
 const Instagram : ISocial = {
-    icon: icons.instagram,
+    icon: aboutIcons.instagram,
     url: "https://www.instagram.com/griffins.stuff/"
 }
 
 const Email : ISocial = {
-    icon: icons.email,
+    icon: aboutIcons.email,
     url: "mailto:griffinbrooks47@gmail.com"
 }
 

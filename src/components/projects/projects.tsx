@@ -1,4 +1,5 @@
 import './projects.css'
+import { projectIcons } from '../../assets/icons'
 
 export const Projects = (props: {children:React.ReactNode}) => {
     return(
@@ -29,23 +30,27 @@ export const Project = (props:ProjectProps) => {
             <h1 className='project-title'>
                 {props.title}
             </h1>
-            <a className='project-url' href={props.url} target='_blank'>
-                {props.website}
-            </a>
+            <ul className='project-buttons'>
+                {
+                    (props.url===undefined)
+                    ? <></>
+                    : <ProjectButton link={props.url} icon={projectIcons.globe}>Visit</ProjectButton>
+                }
+                <ProjectButton link={props.repo} icon={projectIcons.github2}>
+                    Github
+                </ProjectButton>
+
+            </ul>
             <div className='project-desc'>
                 {props.desc}
             </div>
-            <ul>
+            <ul className='project-skills'>
                 {props.skills.map(
                     skill => (
                         <Skill title={skill}/>
                     )
                 )}
             </ul>
-            <a href={props.repo} target='_blank'>
-                Github Repo
-            </a>
-
         </div>
     )
 }
@@ -53,7 +58,18 @@ export const Project = (props:ProjectProps) => {
 export const Skill = (props:{title:string}) => {
     return (
         <li className='project-skill'>
-            <a>{props.title}</a>
+            {props.title}
+        </li>
+    )
+}
+
+export const ProjectButton = (props:{link:string, children:string, icon:string}) => {
+    return (
+        <li className='project-button'>
+            <a className='project-button-tag' href={props.link} target='_blank'>
+                <img src={props.icon} className='project-button-icon' />
+                {props.children}
+            </a>
         </li>
     )
 }

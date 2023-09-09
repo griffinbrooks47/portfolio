@@ -6,8 +6,146 @@ div{
     margin-top: 7rem;
 }
 .projects-header{
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.6rem;
+    margin-right: 1rem;
     font-family: 'Mukta', sans-serif;
 }
 
+
+.project-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    border-radius: 0.7rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.project-title{
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:last baseline;
+}
+.project-buttons{
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+}
+.project-button{
+    position: relative;
+    height: 100%;
+    margin-inline: 0.5rem;
+}
+.project-button-tag{
+    cursor: pointer;
+    height: 100%;
+    padding-left: 0.7rem;
+    padding-right: 1rem;
+    border-radius: 0.3rem;
+    background-color: #f7f7f73a;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+    transition: 0.15s ease-out;
+}
+
+.project-button-tag:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.project-button-icon{
+    height: 1.5rem;
+    margin-right: 0.35rem;
+}
+.project-url{
+    text-align: center;
+    margin-top: 0;
+}
+.project-desc{
+    font-size: 1.15rem;
+    padding-inline: 3.5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.project-skills{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, max-content));
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    
+}
+.project-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    padding-inline: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .projects-container{
+        margin-top: 5rem;
+    }
+    .project-card{
+        width: 80%;
+        margin-inline: 10%;
+    }
+    .projects-header{
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .project-skills{
+        width: 60%;
+        margin-inline: 20%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 890px) {
+    .projects-container{
+        margin-top: 7rem;
+    }
+    .project-card{
+        width: 55rem;
+        margin-inline: auto;
+    }
+    .projects-header{
+        text-align: right;
+        margin-bottom: 1rem;
+    }
+    .project-skills{
+        width: 60%;
+        margin-inline: 20%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    
+}
