@@ -27,9 +27,9 @@ type ProjectProps = {
 export const Project = (props:ProjectProps) => {
     return(
         <div className='project-card'>
-            <h1 className='project-title'>
+            <h2 className='project-title'>
                 {props.title}
-            </h1>
+            </h2>
             <ul className='project-buttons'>
                 {
                     (props.url===undefined)
